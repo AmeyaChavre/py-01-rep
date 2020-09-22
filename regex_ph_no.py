@@ -5,6 +5,6 @@ count=0
 for phone_no in re.finditer(r'(\d{3})-(\d{3})-(\d{4})',text):
     count+=1
     print(f"\tPhone Number {count}: {phone_no.group()}\n")
-    print(f"\tPhone Number First 3-digits : {phone_no.group(1)}\n")
+    print(f"\tPhone Number Area Code : {phone_no.group(1)}\n")
 print(f"\tThere are {count} phone numbers in the text.")
 
