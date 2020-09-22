@@ -6,3 +6,5 @@ for words in re.finditer(r'[^!,?.()]+',text):
     text_no_punct+=(words.group())
 list_no_punct = text_no_punct.split()
 print(f"List with no punctuations : {list_no_punct}")
+
+print(f"Another Method : {re.findall(r'[^!,?.() ]+',text)}")
