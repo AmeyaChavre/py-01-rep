@@ -25,6 +25,17 @@ for any_email in mailing_list:
     if "amazon.com" in any_email:
         amazon_accounts.append(any_email)
 print(f"\nList of Amazon Accounts : {amazon_accounts}")
+
+aws_accounts = open('C:\\Users\\User-PC\\Desktop\\aws_accounts.csv',mode='w',newline='')
+
+csv_results = csv.writer(aws_accounts,delimiter=',')
+
+csv_results.writerow(['dhowatt6@amazon.com', 'kherion7@amazon.com', 'hbraidwoodz@amazon.com'])
+
+aws_accounts.close()
+
+print(f"Amazon accounts have been saved in aws_accounts.csv")
+
     
     
     
