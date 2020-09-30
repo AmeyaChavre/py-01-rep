@@ -30,7 +30,7 @@ aws_accounts = open('C:\\Users\\User-PC\\Desktop\\aws_accounts.csv',mode='w',new
 
 csv_results = csv.writer(aws_accounts,delimiter=',')
 
-csv_results.writerow(['dhowatt6@amazon.com', 'kherion7@amazon.com', 'hbraidwoodz@amazon.com'])
+csv_results.writerow(amazon_accounts)
 
 aws_accounts.close()
 
