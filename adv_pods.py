@@ -12,7 +12,7 @@ print(s.count('w'))
 set1 = {2,3,1,5,6,8}
 set2 = {3,1,7,5,6,8}
 print(set1.difference(set2))
-print(set.intersection(set2))
+print(set1.intersection(set2))
 
 myDict = {x: x**3 for x in [0,1,2,3,4]} 
 print (myDict)
