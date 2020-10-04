@@ -1,8 +1,11 @@
 import sys
-from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication, QWidget
 
-app = QtGui.QApplication(sys.argv)
+app = QApplication(sys.argv)
 
-window = QtGui.QWidget()
+root = QWidget()
+root.resize(320, 240)
+root.setWindowTitle("Hello, World!")
+root.show()
 
-window.show()
+sys.exit(app.exec_())
